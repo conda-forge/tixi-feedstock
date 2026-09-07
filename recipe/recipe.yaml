@@ -43,9 +43,6 @@ tests:
       imports:
         - tixi3
       pip_check: false
-      python_version:
-        - ${{ python_min }}.*
-        - "*"
   - script:
       - tixiDemo
 
