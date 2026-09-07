@@ -14,7 +14,7 @@ source:
     - disabled-fortran-example.patch
 
 build:
-  number: 2
+  number: 3
   python:
     version_independent: true
 
