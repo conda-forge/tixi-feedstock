@@ -18,6 +18,9 @@ cmake --install . --config Release
 if errorlevel 1 exit 1
 
 REM install python packages
+REM SP_DIR is given with a forward slash (e.g. %PREFIX%\Lib/site-packages), which
+REM breaks cmd's builtin mkdir/copy commands, so normalize to backslashes first.
+set "SP_DIR=%SP_DIR:/=\%"
 mkdir %SP_DIR%\tixi3
 echo. 2> %SP_DIR%\tixi3\__init__.py
 copy lib\tixi3wrapper.py %SP_DIR%\tixi3\
