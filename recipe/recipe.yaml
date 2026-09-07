@@ -29,12 +29,12 @@ requirements:
     - doxygen >=1.8.10
     - cmake   >=3.0.0
   host:
-    - python
+    - python ${{ python_min }}.*
     - libcurl
     - libxml2-devel
     - libxslt
   run:
-    - python
+    - python >=${{ python_min }}
   run_exports:
     - ${{ pin_subpackage('tixi', upper_bound='x.x') }}
 
