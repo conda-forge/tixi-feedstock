@@ -11,7 +11,7 @@ cxx_compiler:
 libcurl:
 - '8'
 libxml2_devel:
-- '2.14'
+- '2.15'
 pin_run_as_build:
   python:
     min_pin: x.x
@@ -20,3 +20,6 @@ python:
 - 3.14.* *_cp314
 target_platform:
 - win-64
+zip_keys:
+- - python
+  - channel_sources
